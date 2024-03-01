@@ -18,9 +18,23 @@
             font-family: "Roboto", sans-serif;
         }
     </style>
+    <script>
+      module.exports = {
+  theme: {
+    extend: {
+      colors: {
+        "linear-from": '#FF0000', // Define your custom color
+        "orange": '#FF8938', // Define your custom color
+      },
+    },
+  },
+  variants: {},
+  plugins: [],
+};
+    </script>
 </head>
 <body>
-    <!-- <header>
+    <header>
         <div class="container mx-auto">
             <div class="hero">
                 <div class="hero-content flex-col lg:flex-row-reverse">
@@ -43,7 +57,7 @@
                 </div>
               </div>
         </div>
-    </header> -->
+    </header>
 
     <main class="container mx-auto">
         <section class="text-center my-10">
@@ -150,6 +164,82 @@
           </div>
         </div>
         </section>
+        <section>
+          <h1 class="text-center text-5xl font-extrabold mt-32 mb-5">News & Events</h1>
+          <p class="text-center max-w-4xl mx-auto">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. </p>
+          <!-- news and events cards -->
+          <div class="flex flex-col md:flex-row gap-6 justify-center mt-12">
+          <div class="card w-96 bg-white shadow-xl p-5 border-solid border-black border-2">
+            <figure><img src="images/news-1.png" alt="Shoes" /></figure>
+            <div class="card-body text-black">
+              <p class="font-medium text-slate-400">Feb 05, 2027</p>
+              <h2 class="card-title">Collecting 8 points for discount</h2>
+              <p class="font-medium text-slate-400">There are many variations of passages of Lorem Ipsum available.</p>
+              <h5 class="font-bold">Learn More</h5>
+            </div>
+          </div>
+          <div class="card w-96 bg-white shadow-xl p-5 border-solid border-black border-2">
+            <figure><img src="images/news-2.png" alt="Shoes" /></figure>
+            <div class="card-body text-black">
+              <p class="font-medium text-slate-400">Feb 05, 2027</p>
+              <h2 class="card-title">Collecting 8 points for discount</h2>
+              <p class="font-medium text-slate-400">There are many variations of passages of Lorem Ipsum available.</p>
+              <h5 class="font-bold">Learn More</h5>
+            </div>
+          </div>
+          <div class="card w-96 bg-white shadow-xl p-5 border-solid border-black border-2">
+            <figure><img src="images/news-3.png" alt="Shoes" /></figure>
+            <div class="card-body text-black">
+              <p class="font-medium text-slate-400">Feb 05, 2027</p>
+              <h2 class="card-title">Collecting 8 points for discount</h2>
+              <p class="font-medium text-slate-400">There are many variations of passages of Lorem Ipsum available.</p>
+              <h5 class="font-bold">Learn More</h5>
+            </div>
+          </div>
+        </div>
+        </section>
     </main>
+    <footer class=" mt-32 p-10 bg-white text-black bg-gradient-to-r from-[#FF00001A] to-[#FF89381A] px-56 py-48 ">
+      <div class="flex justify-between mb-24">
+        <img src="images/cup.png" alt="">
+        <div>
+          <span>Ready to get started?</span>
+          <button class="btn ml-10 bg-gradient-to-r from-[#FF0000] to-[#FF8938] border-none text-white">Get Started</button>
+        </div>
+      </div>
+      <div class="footer gap-32">
+        <nav class=" space-y-5">
+          <h6 class="footer-title">Quick Links</h6> 
+          <a class="link link-hover">Home</a>
+          <a class="link link-hover">About Us</a>
+          <a class="link link-hover">Insurance</a>
+          <a class="link link-hover">Privacy Policy</a>
+        </nav> 
+        <nav class="space-y-5">
+          <h6 class="footer-title">Our Service</h6> 
+          <a class="link link-hover">Life Insurance</a>
+          <a class="link link-hover">Car Insurance</a>
+          <a class="link link-hover">Health Insurance</a>
+          <a class="link link-hover">House Insurance</a>
+        </nav> 
+        <nav class="space-y-5">
+          <h6 class="footer-title">Help</h6> 
+          <a class="link link-hover">FAQs</a>
+          <a class="link link-hover">Contact Us</a>
+        </nav> 
+        <form>
+          <h6 class=" text-2xl font-semibold mb-10">Subscribe to our <br> newsletter</h6> 
+          <fieldset class="form-control w-80"> 
+            <div class="">
+              <input type="text" placeholder="Email address" class="px-12 bg-transparent outline-none border-solid border-black border-b-2" /> 
+              <button class="btn  join-item rounded-full bg-gradient-to-r from-[#FF0000] to-[#FF8938] border-none text-white"><i class="fa-solid fa-chevron-right"></i></button>
+            </div>
+          </fieldset>
+        </form>
+      </div>
+      <aside class="text-center mt-28">
+        <p>Copyright © 2024 - All right reserved by ACME Industries Ltd</p>
+      </aside>
+    </footer>
 </body>
 </html>
